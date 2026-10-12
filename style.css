@@ -1,0 +1,27 @@
+/* ===== Font: ကိုယ်ကြိုက်တဲ့ font ဖိုင်ကို fonts/ ထဲထည့်ပြီး အောက်က နာမည်ကို ပြင်ပါ ===== */
+@font-face{
+  font-family:"MyFont";
+  src:url("fonts/myfont.ttf");   /* .woff2 / .otf သုံးရင် ဒီနာမည်ကို ပြောင်းပါ */
+  font-display:swap;
+}
+
+:root{--bg:#fde8ea;--card:#fff;--ink:#4a2630;--yes:#e8486a;--no:#c9788a;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#2a1620;--card:#3a2230;--ink:#ffe3ea}}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);
+  font-family:"MyFont","Noto Sans Myanmar","Myanmar Text","Padauk",system-ui,sans-serif;overflow:hidden}
+.stage{position:relative;height:100%;display:flex;align-items:center;justify-content:center}
+.box{text-align:center;padding:24px}
+.gif{width:min(260px,62vw);height:min(260px,62vw);object-fit:contain;border-radius:28px;background:#fff;display:block;margin:0 auto}
+h2{font-size:30px;margin:12px 0 26px}
+.cap{font-size:22px;font-weight:600;line-height:1.5;min-height:66px;margin:14px 0 0;color:var(--yes)}
+.yescap{min-height:0;margin:18px 0}
+.btns{position:relative;height:60px;display:flex;gap:18px;justify-content:center;align-items:center}
+button{font:inherit;font-size:18px;border:0;border-radius:999px;padding:10px 28px;color:var(--on);cursor:pointer}
+#yes{background:var(--yes)}
+#no{background:var(--no);transition:left .15s,top .15s}
+#result{display:none}
+.heart{position:fixed;bottom:-40px;font-size:28px;animation:up 3s linear forwards;pointer-events:none}
+@keyframes up{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@media (prefers-reduced-motion:reduce){.heart{animation:none}}
