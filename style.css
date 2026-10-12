@@ -1,7 +1,7 @@
-/* ===== Font: ကိုယ်ကြိုက်တဲ့ font ဖိုင်ကို fonts/ ထဲထည့်ပြီး အောက်က နာမည်ကို ပြင်ပါ ===== */
+/* ===== Font: ကိုယ်ကြိုက်တဲ့ font ဖိုင်ကို index.html နဲ့ တစ်နေရာတည်းထည့်ပြီး အောက်က နာမည်ကို ပြင်ပါ ===== */
 @font-face{
   font-family:"MyFont";
-  src:url("fonts/myfont.ttf");   /* .woff2 / .otf သုံးရင် ဒီနာမည်ကို ပြောင်းပါ */
+  src:url("myfont.ttf");   /* .woff2 / .otf သုံးရင် ဒီနာမည်ကို ပြောင်းပါ */
   font-display:swap;
 }
 

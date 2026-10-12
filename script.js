@@ -1,5 +1,5 @@
 // No ကိုနှိပ်ဖို့ကြိုးစားတိုင်း ပြောင်းမယ့် gif နဲ့ စာတွေ (အစဉ်လိုက်)
-var noGifs = [1,2,3,4,5,6,7].map(function(n){ return 'assets/no-' + n + '.gif'; });
+var noGifs = [1,2,3,4,5,6,7].map(function(n){ return 'no-' + n + '.gif'; });
 var noCaps = [
   "နာချင်နေတာ",
   "လောထုတ်ပလိုက်မယ်",
@@ -15,7 +15,7 @@ var yesCaps = [
   "ညားရီးချစ်",
   "ဖိတ်စာရိုက်လိုက်ရတော့မလား"
 ];
-var yesGifs = [1,2,3,4,5].map(function(n){ return 'assets/yes-' + n + '.gif'; });
+var yesGifs = [1,2,3,4,5].map(function(n){ return 'yes-' + n + '.gif'; });
 
 var yes = document.getElementById('yes'), no = document.getElementById('no');
 var tries = 0;
